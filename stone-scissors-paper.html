@@ -1,0 +1,16 @@
+<script>
+  for (var i = 1; i < 10; i = i + 1) {
+    document.write(i + ',');
+    for (i = 0; i < 20; i = i + 1) {
+      var r = Math.random();
+      if (r < 0.33333) {
+        document.write('&#128074');
+      } else if (r < 0.66667) {
+        document.write('&#9996');
+      } else {
+        document.write('&#9995');
+      }
+      document.write(',');
+    }
+  }
+</script>
